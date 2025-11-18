@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+/*------------Header----------*/
+header{
+    background-color:#4A7C59;
+}
+/*----------Navbar----------*/
+nav{
+    position: sticky;
+    top: 0;
+    background-color: #4A7C59;
+    z-index: 10;
+    padding: 3px;
+}
+.navbar, .navbar a{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 30px;
+    border-bottom: solid 4px transparent;
+}
+.navbar{
+    padding: 40px;
+}
+.navbar a:hover{
+    border-bottom: solid 4px #FFFFFF;
+    transition: 0.4s;
+}
+/*---------Title----------*/
+.title{
+    text-align: center;
+    padding-bottom: 20px;
+    color: #FFFFFF;
+}
+.title > h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+/*---------CTA-button-----------*/
+.CTA{
+    text-align: center;
+    padding: 40px 0px 60px 0px;
+    color:#333333;
+}
+.CTA > a > button{
+    padding: 40px;
+    border: solid 4px transparent;
+    font-size: 25px;
+}
+.CTA > a > button:hover{
+    border: solid 4px #333333;
+    transition: 0.1s;
+
+}
+/*------------Body----------*/
+body{
+    background-color:#FAF9F7;
+    color: #333333;
+}
+main > .om-oss{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+    padding: 25px;
+    line-height: 2.5;
+    align-items: center;
+    background-color: #F4EADF;
+    margin: 40px;
+    gap: 25px;
+}
+.om-oss img{
+    width: 100%;
+    height: 100%;
+}
+.om-oss h2{
+    font-size: 30px;
+}
+/*---------Utvalgte produkter----------*/
+#produkter-title{
+    font-size: 30px;
+    text-align: center;
+    padding: 40px 0px 0px 0px;
+}
+.utvalgte-produkter > article{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+    padding: 25px;
+    line-height: 2.5;
+    align-items: center;
+    background-color: #F4EADF;
+    margin: 40px;
+    gap: 25px;
+}
+.utvalgte-produkter img{
+    width: 100%;
+    height: 100%;
+}
+/*------------Footer----------*/
+footer{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #4A7C59;
+    padding: 40px;
+    color: #FFFFFF;
+}
+footer a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.footer-sosialt{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 50px;
+}
+.footer-kontakt{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.footer-copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:740px){
+    nav > .navbar{
+        display: block;
+    }
+    main > .om-oss{
+        display: block;
+    }
+    main > .utvalgte-produkter > article{
+        display: block;
+    }
+
+
+}
